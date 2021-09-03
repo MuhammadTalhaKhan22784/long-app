@@ -12,11 +12,10 @@ import menu from "../../assets/images/menu.svg";
 // components
 import LeftSidebar from "../../layout/LeftSidebar";
 import RightSidebar from "../../layout/RightSidebar";
-import ThanhLong from "../../components/HomeComponents/ThanhLong";
-import HuePhuong from "../../components/HomeComponents/HuePhuong";
-import Phuong from "../../components/HomeComponents/Phuong";
+import CommentCard from "../../components/HomeComponents/CommentCard";
 
 const Home = () => {
+
   return (
     <>
       <div>
@@ -48,9 +47,8 @@ const Home = () => {
                   defaultValue={""}
                 />
               </form>
-              <ThanhLong />
-              <HuePhuong />
-              <Phuong />
+              <CommentCard />
+              
             </div>
           </div>
           <RightSidebar />
