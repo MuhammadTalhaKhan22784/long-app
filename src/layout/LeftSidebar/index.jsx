@@ -1,12 +1,12 @@
 import React from "react";
-import editProfileIcon from "../../assets/images/edit-profile-icon.svg"
+import editProfileIcon from "../../assets/images/edit-profile-icon.svg";
 
-const LeftSidebar = () => {
+const LeftSidebar = (props) => {
   return (
     <>
-      <div className="sidebar">
+      <div className={`sidebar ${props.className}`}>
         <div className="sidebar-content">
-          <span className="close-menu-one">
+          <span className="close-menu-one" onClick={props.closeFunc}>
             <i className="fal fa-times" />
           </span>
           <h2 className="head-text">Manage Account</h2>

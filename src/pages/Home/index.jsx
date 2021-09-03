@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // css
 import "../../assets/css/bootstrap.min.css";
 import "../../assets/css/helper.css";
@@ -15,22 +15,44 @@ import RightSidebar from "../../layout/RightSidebar";
 import CommentCard from "../../components/HomeComponents/CommentCard";
 
 const Home = () => {
-
+  // states
+  const [showRight, setShowRight] = useState(false);
+  const [showLeft, setShowLeft] = useState(false);
+  // function to close right side bar
+  const handleCloseRight = () => {
+    setShowRight(false);
+  };
+  // function to open right side bar
+  const handleOpenRight = () => {
+    setShowRight(true);
+  };
+  // function to close left side bar
+  const handleCloseLeft = () => {
+    setShowLeft(false);
+  };
+  // function to open left side bar
+  const handleOpenLeft = () => {
+    setShowLeft(true);
+  };
   return (
     <>
       <div>
         <div className="d-flex align-items-center overlay-overflow">
-          <div className="overlay-one" />
-          <div className="overlay-two" />
-          {/*side bar*/}
-          <LeftSidebar />
+          <div className={!showLeft ? "overlay-one" : "overlay-one right-ab"} />
+          <div className={!showRight ? "overlay-two" : "overlay-two left-ab"} />
+
+          {/* left sidebar*/}
+          <LeftSidebar
+            className={!showLeft ? "" : "active"}
+            closeFunc={handleCloseLeft}
+          />
           <div className="main-content main-content-one main-content-two">
             <div className="news-feed-box">
               <div className="d-flex align-items-center justify-content-between d_none">
-                <button className="menu-button-one">
+                <button className="menu-button-one" onClick={handleOpenLeft}>
                   <img src={menu} alt="" />
                 </button>
-                <button className="menu-button-two">
+                <button className="menu-button-two" onClick={handleOpenRight}>
                   <img src={menu} alt="" />
                 </button>
               </div>
@@ -48,10 +70,13 @@ const Home = () => {
                 />
               </form>
               <CommentCard />
-              
             </div>
           </div>
-          <RightSidebar />
+          {/* right sidebar */}
+          <RightSidebar
+            className={!showRight ? "" : "active"}
+            closeFunc={handleCloseRight}
+          />
         </div>
       </div>
     </>
