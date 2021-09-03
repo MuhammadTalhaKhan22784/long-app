@@ -1,0 +1,179 @@
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+	.news-feed-box p br {
+		display: none;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.sidebar {
+	    width: 230px;
+	}
+
+	.manage-btn {
+	    padding: 4px 15px;
+	    font-size: 14px;
+	}
+
+	.sidebar-content {
+    	padding: 25px 20px 55px 20px;
+	}
+
+	.menu-text img {
+	    margin-right: 10px;
+	}
+
+	.right-sidebar {
+	    width: 280px;
+	    padding: 25px 20px 50px 20px;
+	}
+
+	.main-content {
+	    padding-left: 230px;
+	}
+
+	.news-feed-box p br {
+		display: none;
+	}
+
+}
+
+@media (max-width: 991px) {
+
+	.post-mt {
+		margin-top: 20px;
+	}
+
+	.sidebar {
+	    left: -100%;
+	}
+
+	.main-content {
+	    padding-left: 0;
+	    padding-right: 0;
+	}
+
+	.right-sidebar {
+	    right: -100%;
+	}
+
+	.d_none {
+		display: -webkit-box !important;
+		display: -ms-flexbox !important;
+		display: flex !important;
+	}
+
+	.overlay-overflow {
+	    overflow: hidden;
+	    position: relative;
+	    width: 100%;
+	}
+
+	.overlay-one {
+	    position: absolute;
+	    top: 0;
+	    right: -100%;
+	    width: 100%;
+	    height: 100%;
+	    background: transparent;
+	}
+
+	.overlay-two {
+	    position: absolute;
+	    top: 0;
+	    left: -100%;
+	    width: 100%;
+	    height: 100%;
+	    background: transparent;
+	}
+
+	.left-ab {
+		left: 0;
+	}
+
+	.right-ab {
+		right: 0;
+	}
+
+	.close-menu-one, .close-menu-two {
+		width: 30px;
+	    height: 30px;
+	    background: #FFA534;
+	    display: -webkit-inline-box !important;
+	    display: -ms-inline-flexbox !important;
+	    display: inline-flex !important;
+	    -webkit-box-align: center;
+	        -ms-flex-align: center;
+	            align-items: center;
+	    -webkit-box-pack: center;
+	        -ms-flex-pack: center;
+	            justify-content: center;
+	    color: #ffffff;
+	    display: block;
+	    position: absolute;
+	}
+
+	.close-menu-one {
+	    right: 0px;
+	    top: 0px;
+	}
+
+	.close-menu-two {
+	    left: 0;
+	    top: 0;
+	}
+}
+
+
+/*Medium devices (tablets, 767px and down)*/
+
+@media (max-width: 767px) {
+	.news-feed-box p br {
+		display: none;
+	}
+}
+
+
+/*Small devices (landscape phones, 575px and down)*/
+
+@media (max-width: 575px) {
+	.news-feed-box p {
+	    font-size: 13px;
+	    line-height: 22px;
+	}
+
+	.post-box {
+	    height: 50px;
+	    padding: 12px 0 0 20px;
+	    font-size: 13px;
+	}
+
+	.post-open-box p.color-three.mt_30 {
+	    margin-top: 15px;
+	}
+
+	.comment-box textarea {
+	    padding: 10px 10px 0 20px;
+	    font-size: 12px;
+	    height: 45px;
+	}
+
+	.send-btn {
+	    padding: 5px 25px;
+	    right: auto;
+	    font-size: 16px;
+	    top: 65px;
+	    height: 40px;
+	    left: 50%;
+	    -webkit-transform: translateX(-50px);
+	        -ms-transform: translateX(-50px);
+	            transform: translateX(-50px);
+	}
+
+	.comment-box {
+	    margin-bottom: 80px;
+	}
+
+	.news-feed-box {
+	    padding: 0 20px 80px 20px;
+	}
+}
